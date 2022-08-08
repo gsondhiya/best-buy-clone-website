@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <title>Best Buy</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+          #parent{
+              /* max-width: 1380px; */
+           display: grid;
+           grid-template-columns: repeat(2,700px);
+           grid-template-rows: repeat(1,auto);
+            gap:20px;
+           justify-content: center;
+           font-family: Human BBY Digital,Human Fallback,Arial,Arial, Helvetica, sans-serif;
+           background-color:#c0e5f0 ;
+           
+      }
+      #parent a{
+          text-decoration: none;
+          color: black;
+      }
+      #parent a:hover{
+          color: #0141bd;
+    
+         border-radius: 50px;
+      }
+      
+      /* 2ndbox main -15 smallbox */
+      #box15{
+            display:grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(3,auto); 
+            justify-content: center;
+            gap: 10px;  
+            }
+
+      #box15>div{
+        border:2px solid #f5f6f7;
+            color:black;
+            font-size: 10px;
+            text-align: center;
+          padding-top: 20px;
+          border-radius: 20px;
+          background-color:white;
+      }
+      #box15>div>h2:hover{
+               background-color: #f58fd3;
+               border-radius: 50px;
+      }
+      #images{
+          display: flex;
+          justify-content: center;
+
+      }
+      #parent2{
+          display: flex;
+         justify-content: center;
+         gap:30px;
+         font-family: Human BBY Digital,Human Fallback,Arial,Arial, Helvetica, sans-serif;
+      }
+      #parent3{
+          display: flex;
+         justify-content: center;
+         gap:30px;
+         font-family: Human BBY Digital,Human Fallback,Arial,Arial, Helvetica, sans-serif;
+      }
+     .child1{
+          height: 100px;
+          width: 600px;
+          line-height: 20px;
+          text-align: center;
+         
+      }
+      .parent4{
+                  height: 150px;
+                  width: 100%;
+                  background-color:#0141bd ;
+                  text-align: center;
+                  color: white;
+                  display: flex;
+                 padding-left: 150px;
+                  gap:20px;
+                  font-family: Human BBY Digital,Human Fallback,Arial,Arial, Helvetica, sans-serif;
+      }
+      .parent5{height: 530px;
+             width: 500px;
+             background-color: #f6f7f8;
+            text-align: center;
+            font-family: Human BBY Digital,Human Fallback,Arial,Arial, Helvetica, sans-serif;
+            
+
+      }
+      .parent5child{display:grid;
+                  grid-template-columns: repeat(2,190px);
+                  grid-template-rows: repeat(2,210px);
+                  gap:25px;
+                  justify-content: center;
+                 padding-top: 10px;
+      }
+      .parent5child>div{
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  
+          line-height: 15px;
+          border-radius: 5px;
+      }
+     .parent5child p{
+        margin-top: 15px;
+      }
+      .parent5child>div>img{
+                         height: 150px;
+                        width: 160px  
+      }
+    #parent6{   display: grid;
+                grid-template-columns: repeat(3,500px);
+               grid-template-rows: repeat(2,430px);
+               text-align: center;
+               font-family: Human BBY Digital,Human Fallback,Arial,Arial, Helvetica, sans-serif;
+
+    }
+    #parent6>div>h2{
+        color: #0141bd;
+        
+    }
+    #parent6>div>h2:hover{
+        color: #f30808;
+        
+    }
+    #parent6>div{
+      border: solid #f6f7f8;
+    }
+    #parent6>div>img{
+        height: 250px;
+        width:250px;
+    }
+    .parent7{
+               display: grid;
+                grid-template-columns: repeat(6,230px);
+               grid-template-rows:280px;
+               text-align: center;
+               gap:20px;
+               justify-content: center;
+               font-size: 9px;
+               font-family: Human BBY Digital,Human Fallback,Arial,Arial, Helvetica, sans-serif;
+
+    }
+    
+    .parent7>div>h3{
+       color: #0141bd;
+       font-size: 15px;
+       font-weight: 700;
+    }
+    .parent7>div>h3:hover{
+       color: #ee0d0d;
+    }
+    .image7{
+        height: 150px;
+        width:100px;
+    }
+    .image8{
+        height: 160px;
+        width:190px;
+    }
+    #parent2>div>h2:hover{
+        color: #ee0d0d;
+    }
+    #parent3>div>h2:hover{
+        color: #ee0d0d;
+    }
+    .parent5>h2:hover{
+        color: #ee0d0d;
+    }
+
+    </style>
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="topcontainer">
+            <div class="topnav">
+                <img id="companylogo"
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png"
+                    alt="error">
+                <button id="menu">
+                    <img id="menulogo" src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="error">
+                    <span>Menu</span>
+                </button>
+
+
+                <div id="searchbar">
+                    <input type="text" id="search" placeholder="Search Best Buy" onclick="goto()">
+                    <img id="searchlogo"
+                        src="https://t3.ftcdn.net/jpg/03/25/73/68/240_F_325736897_lyouuiCkWI59SZAPGPLZ5OWQjw2Gw4qY.jpg"
+                        alt="error">
+
+                </div>
+
+
+
+                <div id="store">
+                    <img id="location" src="https://cdn-icons-png.flaticon.com/512/126/126122.png" alt="">
+                    <span id="storetext">Aiea</span>
+                </div>
+
+
+                <div id="cart">
+                    <img id="cartlogo"
+                        src="https://cdn-icons-png.flaticon.com/512/34/34627.png"
+                        alt="error">
+                        <a href="../cart/cart.html" id="carttext"> Cart</a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="bottomnav">
+            <div class="deals">
+                <a href="../Topdeals/topdeal.html">Top deals</a>
+                <a href="../deal of the day/style.html">Deals of the Day</a>
+                <a href="../total tech/totalTech.html">Best Buy Totaltech</a>
+                <a href="">Credit Cards</a>
+                <a href="">Gift Cards</a>
+                <a href="">Gift Ideas</a>
+                <a href="">Health & Wellness</a>
+                <a href="">More</a>
+                <select id="">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="status">
+                <ul>
+                    <li>Account
+                        <div class="sublink">
+                            <ul>
+                                <li><a href="../SIgnIN_SignUp/login.html"> Sign In</a></li>
+                                <li><a href="../SIgnIN_SignUp/signUp.html">Create an Account</a></li>
+                                <li>
+                                    <p> Your Orders</p>
+                                </li>
+                                <li>
+                                    <p>Purchase History</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li>Recently Viewed</li>
+                    <li>Order Status</li>
+                    <li>Saved Items</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- !enter your content here -->
+
+    <!-- slider -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+<style media="screen">
+.carousel-cell {
+width: 70%;
+margin: 5%;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+}
+</style>
+<body>
+<!-- <h1 class="w3-center">Simple Slider using Flickity Plugin By HACKERRAHUL</h1> -->
+<div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+  
+  <div class="carousel-cell">
+    <img class="w3-image" src="https://smash-images.photobox.com/original/5f04c1b41fd48d1b10ff27dfc90548bf13608845_Large-Print-lifestyle-3_1-2600.jpg">
+  </div>
+  <div class="carousel-cell">
+    <img class="w3-image" src="https://smash-images.photobox.com/original/bca8e5fa7862a2cfaefc300c5b572e7a6dc6f3f3_Standard-Prints-lifestyle-3_1-2600.jpg">
+  </div>
+  <div class="carousel-cell">
+    <img class="w3-image" src="https://smash-images.photobox.com/original/a422aed1a721e933961b19ea9e47e07fc71e0699_Acrylic-Prints-lifestyle-3_1-2600.jpg">
+  </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<!-- slider -->
+    
+  <!-- 1st line parent div -->
+  <div id="parent">
+    <!-- 1st box -->
+    <div id="images">
+      <img style="height: 600px;
+                   width: 640px;"
+      src="https://www.emailonacid.com/images/blog_images/emailmarketing/2016/blackfriday/40c7145f7b7e4f848dfa104bdf04f907.gif"> 
+       
+    </div>
+    <!-- 2nd box -->
+    <div>
+        <!-- fonts -->
+        <div>
+            <h1>Shop by trending category</h1>
+        </div>
+        <!-- 15box -->
+    <div id="box15">
+        <!-- box1 -->
+        <div>
+          <a href="../TV/tvcomplete.html"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-product-nav-ht_der-78525.jpg;maxHeight=120;maxWidth=120"></a>
+        <a href="../TV/tvcomplete.html"><h5>Television</h5></a>
+        </div>
+        <!-- box2 -->
+        <div>
+           <a href="../Laptop/laptopcomplete.html"> <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-product-nav-comp_der-78519.jpg;maxHeight=120;maxWidth=120"></a>
+        <a href="../Laptop/laptopcomplete.html"><h5>Laptops</h5></a>
+        </div>
+        <!-- box3 -->
+        <div>
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-35599-ghp-pm-sale-test-tablets_der-89809.jpg;maxHeight=120;maxWidth=120">
+            <h5>Tablets</h5>
+        </div>
+        <!-- box4 -->
+        <div>
+            <a href="../Phone/phonecomplete.html"><img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-product-nav-cp_der-78520.jpg;maxHeight=120;maxWidth=120"></a>
+            <a href="../Phone/phonecomplete.html"> <h5>Cell Phones</h5></a>
+        </div>
+        <!-- box5 -->
+        <div>
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-35599-ghp-pm-sale-test-printers_der-89795.jpg;maxHeight=120;maxWidth=120">
+            <h5>Printers</h5>
+        </div>
+        <!-- box 6 -->
+        <div>
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-product-nav-app_der-78512.jpg;maxHeight=120;maxWidth=120">
+            <h5>Major Appliance</h5>
+        </div>
+        <!-- box 7 -->
+        <div>
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-36983-ghp-pm-sale-test-small-appliances_der-93080.jpg;maxHeight=120;maxWidth=120">
+            <h5>Small Appliance</h5>
+        </div>
+        <!-- box 8 -->
+        <div>
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-product-nav-vg_der-78530.jpg;maxHeight=120;maxWidth=120">
+            <h5>Video Games</h5>
+        </div>
+        <!-- box 9 -->
+        <div>
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-product-nav-wearable_der-78529.jpg;maxHeight=120;maxWidth=120">
+            <h5>Smart Watches</h5>
+        </div>
+        <!-- box 10 -->
+        <div>
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-36983-ghp-pm-sale-test-pc-gaming_der-93082.jpg;maxHeight=120;maxWidth=120">
+            <h5>Pc Gaming</h5>
+        </div>
+        
+       </div>
+       
+    </div>
+</div>
+<br><br>
+</body>
+</html>
+
+
+
+<!-- 2nd line parent div -->
+<div id="parent2">
+ <div class="child1">
+     <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-65963-confident-210831-c34d2a74-8b79-41cd-8161-b9987666f7d6.png;maxHeight=72;maxWidth=72">
+    <h2>Shop safely and confidently.</h2>
+    <p>See our safety procedures</p>
+    </div>
+ <div class="child1">
+     <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-65963-expert-210831-70c599ed-fc34-47d8-9b93-85f899d93c8f.png;maxHeight=72;maxWidth=72">
+     <h2>Get help shopping from home.</h2>
+     <p>Shop with an Expert</p>
+ </div>
+</div>
+
+<br><br>
+<!-- 3rd parent -->
+<div id="parent3">
+  <div class="child1">
+      <img style="height: 50px;"
+      src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-37875-app-curbside-vpe_der-149659.png;maxHeight=144;maxWidth=144">
+      <h2>Ready in one hour</h2>
+      <p>with Store or Curbside Pickup.</p>
+  </div>
+  <div class="child1">
+    <img style="height: 50px;"
+    src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-app-vpe-freeshippin_der1-206852.png;maxHeight=144;maxWidth=144">
+    <h2>  Free next-day delivery</h2>
+    <p>Free next-day delivery
+        on thousands of items.</p>
+  </div>
+  <div class="child1">
+    <img style="height: 50px;"
+    src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-app-vpe-freeshippin_der1-206852.png;maxHeight=144;maxWidth=144">
+    <h2>Same-day delivery.</h2>
+    <p>Order by 3 p.m., get it by 8 p.m.Order by 2 p.m. Sunday.</p>
+  </div>
+</div>
+<br><br>
+<!-- parent4 -->
+
+  <div class="parent4"> 
+              <div>
+               <img style="height: 150px;"
+               src="data:image/png;base64,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">
+              </div>
+             <div>
+              <h2>The membership you and your tech deserve.</h2>
+               <p>Best Buy Totaltech™ provides 24/7/365 tech support, <br>up to 24 months of product protection, free standard installation and so much more. Terms and conditions apply.</p>
+            </div>
+               <div>
+                <img style="height: 150px"           
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm8iNW47OVqv7dMHACflhANH2eZEYUGGw6Sg&usqp=CAU">
+            </div>     
+ </div>
+<br><br>
+
+<!-- parent5 -->
+<div style="display:flex;
+        gap: 50px;
+        justify-content: center;">
+<div class="parent5">
+         <h2>Creative hobby ideas</h2>
+  <div class="parent5child">
+              <div>
+                  <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71384-flex-sim-220214-1705c333-6c55-42f1-acf4-2c8afbce5b72.jpg;maxHeight=216;maxWidth=216">
+                 <br>
+                  <p>Indoor golf simulators</p>
+              </div>
+              <div>
+                  <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71384-flex-legos-220214-657df8e5-315e-49cb-ab3c-fdb7773f3773.jpg;maxHeight=216;maxWidth=216">
+                  <p>Advanced LEGO sets</p>
+              </div>
+              <div>
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71384-flex-plant-220214-90827550-8a57-4676-b328-483d6a6b143e.jpg;maxHeight=216;maxWidth=216">
+                <p>Indoor gardening</p>
+              </div>
+              <div>
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71384-flex-cricut-220214-aa25b5bd-2f5d-47cc-94a8-4a43c67e57ce.jpg;maxHeight=216;maxWidth=216">
+                <p>Cricut crafting tools</p>
+              </div>
+            </div>
+ </div>
+ <!-- box2 -->
+ <div class="parent5">
+    <h2>Shop with a Home Expert</h2>
+    <div class="parent5child">
+         <div>
+             <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71386-flex-fitness-220214-d8691682-1900-4a6f-91f6-393522f0ce76.jpg;maxHeight=216;maxWidth=216">
+             <p>Indoor golf simulators</p>
+         </div>
+         <div>
+             <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71386-flex-wifi-220214-089b6f7f-40ae-4504-b21b-704de2070744.jpg;maxHeight=216;maxWidth=216">
+             <p>Advanced LEGO sets</p>
+         </div>
+         <div>
+           <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71386-flex-he-220214-efcf1366-90d7-49fb-a2fe-51b25a4bf8d3.jpg;maxHeight=216;maxWidth=216">
+           <p>Indoor gardening</p>
+         </div>
+         <div>
+           <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71386-flex-kitchen-220214-2589a2d0-9943-4065-960a-e562c0d84fbd.jpg;maxHeight=216;maxWidth=216">
+           <p>kitchen of your dreams</p>
+         </div>
+       </div>
+</div>
+ <!-- box3 -->
+ <div class="parent5">
+    <h2>Black History Month</h2>
+    <div class="parent5child">
+         <div>
+             <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-59250-pol-mot-bhm-210117-207943.png;maxHeight=216;maxWidth=216">
+             <p>Video series: Discussing tech and equity</p>
+         </div>
+         <div>
+             <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71385-flex-hammock-220214-450869d1-e732-43c7-a24d-bc182bcd48de.jpg;maxHeight=216;maxWidth=216">
+             <p>More Black ideas. More Black makers.</p>
+         </div>
+         <div>
+           <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71385-flex-coffee-220214-5d39ed9b-501e-471d-96a8-d0715aa7cfb4.jpg;maxHeight=216;maxWidth=216">
+           <p>Teens brewed up art, tunes for coffee company</p>
+         </div>
+         <div>
+           <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71385-flex-movies-220214-4c88b1f0-110b-43c8-aa24-426ae940ff3d.jpg;maxHeight=216;maxWidth=216">
+           <p>Music and film from Black </p>
+         </div>
+       </div>
+</div>
+
+
+
+</div>
+<br><br>
+<!-- parent6 -->
+<h1>Our featured offers</h1>
+<div id="parent6">
+   <!-- child -->
+  <div>
+      <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_6479683_le-xx-0301-9ca1a86c-3aa4-4d51-a7ab-db1ebf4522b9.jpg;maxHeight=504;maxWidth=740">
+      <h2>Save up to $400 on select Lenovo laptops.</h2>
+      <p>Minimum savings is $30.</p>
+  </div>
+  <div>
+    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-co97102-google_DER-b1a0c0aa-0121-47d3-9409-406edb856991.jpg;maxHeight=504;maxWidth=740">
+    <h2>Save $50 on Google Nest Hub or Hub Max smart display</h2>
+    <p>when you buy an eligible Google smart home product. Choose from security cameras, thermostats and more.
+        Excludes open-box items. Terms and conditions apply.</p>
+  </div>
+  <div>
+    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-470396-smarttv-pol_der-e7a6cbc9-acd8-4e71-8900-06e0123a4cd6.jpg;maxHeight=504;maxWidth=740">
+    <h2>Smart TVs as low as $119.99.</h2>
+    <p>Stream your favorites from popular services, get personalized content and more.</p>
+  </div>
+  <div>
+    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-MMT-496824-220103_DER-fb1dfb45-79e1-432d-a419-a875013e69ba.jpg;maxHeight=504;maxWidth=740">
+    <h2>Epson EcoTank printers.</h2>
+    <p>A game-changing amount of ink.</p>
+  </div>
+  <div>
+    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_MMT-514521_der-133f2d2d-373f-4ded-af55-1df50445f88a.jpg;maxHeight=504;maxWidth=740">
+    <h2>Save on select Bissell floor care.</h2>
+    <p>No matter the surface, Bissell cleans dirt and messes easily.</p>
+  </div>
+  <div>
+    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-mmt511969-3-sony_DER-37b02401-343a-45b8-b008-5587ce4b9c0a.jpg;maxHeight=504;maxWidth=740">
+    <h2>New Sony LinkBuds true wireless headphones.</h2>
+    <p>LinkBuds keep you connected and in control of your music by combining comfortable, open-ear styling with excellent call and sound quality.</p>
+  </div>
+</div>
+<br>
+<!-- parent7 -->
+<h1>Inspired by your shopping history (10 items)</h1>
+<hr>
+<div class="parent7">
+   <div>
+       <img class="image7"
+       src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6083/6083595_sd.jpg;maxHeight=272;maxWidth=400">
+       <h3>Apple - Airpods with Wireless Charging Case - White</h3>
+    <p> ⭐⭐⭐⭐⭐(14,819) $159.99</p>
+   </div>
+   <div>
+       <img class="image7"
+       src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6473/6473899_sd.jpg;maxHeight=272;maxWidth=400">
+       <h3>BGeek Squad Beats Studio Buds Totally Wireless</h3>
+       <p>⭐⭐⭐⭐$86.99</p>
+   </div>
+   <div>
+    <img class="image7"
+    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4900/4900921_sd.jpg;maxHeight=272;maxWidth=400">
+    <h3>JBL - Tune In-Ear Headphones - Black</h3>
+    <p>⭐⭐⭐⭐(844)
+        $49.99</p>
+   </div>
+   <div>
+        <img class="image7"
+        src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6423/6423274_sd.jpg;maxHeight=272;maxWidth=400">
+    <h3>Beats Studio³ Wireless Noise Cancelling Headphones</h3>
+    <p>⭐⭐⭐⭐(12,057)
+        $249.99</p>
+   </div>
+   <div>
+    <img class="image7"
+    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5920/5920901_rd.jpg;maxHeight=272;maxWidth=400">
+    <h3>Apple - AirPods (3rd generation) - White</h3>
+    <p>⭐⭐⭐⭐(2,230)
+        $179.00</p>
+   </div>
+   <div>
+    <img class="image7"
+    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4900/4900944_sd.jpg;maxHeight=272;maxWidth=400">
+    <h3>Apple - AirPods Max - Space Gray</h3>
+    <p>⭐⭐⭐⭐(1,864)
+        $549.00</p>
+   </div>
+</div>
+<br>
+<h1>Trending deals (15 items)</h1>
+<hr>
+<!-- parent8 style upload in parent 7-->
+<div class="parent7">
+ <div>
+     <img class="image8"
+     src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6453/6453324_sd.jpg;maxHeight=272;maxWidth=400">
+     <h3>LG - 55" Class C1 Series OLED 4K UHD Smart webOS TV</h3>
+     <p>⭐⭐⭐⭐(1,196)
+        $1,299.99</p>
+ </div>
+ <div>
+     <img class="image8"
+     src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6451/6451082_sd.jpg;maxHeight=272;maxWidth=400">
+     <h3>LG 34” UltraWide Full HD HDR Monitor with FreeSync</h3>
+     <p>⭐⭐⭐⭐(311)
+        $299.99Your price for this item is $299.99
+        </p>
+ </div>
+ <div>
+    <img class="image8"
+    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6428/6428991_sd.jpg;maxHeight=272;maxWidth=400">
+    <h3>Microsoft - Surface Laptop Go - 12.4" Touch-Screen - Intel 10th</h3>
+    <p>(298)
+        ⭐⭐⭐⭐
+        $549.99The previous price for this item was $549.99</p>
+ </div>
+ <div>
+    <img class="image8"
+    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5961/5961901_sd.jpg;maxHeight=272;maxWidth=400">
+    <h3>HP - ENVY Photo 7855 Wireless All-In-One Instant Ink Ready Inkjet</h3>
+    <p> ⭐⭐⭐⭐(6,662)
+        $214.99</p>
+ </div>
+ <div>
+    <img class="image8"
+    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6456/6456144_sd.jpg;maxHeight=272;maxWidth=400">
+    <h3>MSI - GF65 15.6" 144hz Gaming Laptop - Intel Core i5 - NVIDIA</h3>
+    <p>⭐⭐⭐⭐(200)
+        $799.99</p>
+ </div>
+ <div>
+    <img class="image8"
+    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6477/6477624_sd.jpg;maxHeight=272;maxWidth=400">
+    <h3>Lenovo - IdeaPad 3 15" HD Touch Screen Laptop - Intel Core i3-1115G4 </h3>
+    <p>⭐⭐⭐⭐(143)
+        $349.99</p>
+ </div>
+</div>
+<br>
+<!-- parent9 -->
+<h1> Popular products (15 items)</h1>
+<hr>
+<div class="parent7">
+   <div>
+       <img class="image8"
+       src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6215/6215932_sd.jpg;maxHeight=272;maxWidth=400">
+       <h3>Apple Watch Series 7 (GPS) 41mm Midnight Aluminum Case </h3>
+       <p>⭐⭐⭐⭐(2,111)
+        $399.00</p>
+   </div>
+   <div>
+    <img class="image8"
+    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6337/6337720_sd.jpg;maxHeight=272;maxWidth=400">
+    <h3>Insignia™ - 4-Slice Toaster Oven - Stainless Steel</h3>
+    <p>⭐⭐⭐⭐(398)
+        $39.99</p>
+</div>
+<div>
+    <img class="image8"
+    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6323/6323759_sd.jpg;maxHeight=272;maxWidth=400">
+    <h3>Canon - EOS Rebel T7 DSLR Video Two Lens Kit with EF-S 18-55mm an</h3>
+    <p>⭐⭐⭐⭐(1,910)
+        $599.99</p>
+</div>
+<div>
+    <img class="image8"
+    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6412/6412320_sd.jpg;maxHeight=272;maxWidth=400">
+    <h3>Bella Pro Series - 2-qt. Analog Air Fryer - Matte Black
+       
+        </h3>
+    <p>⭐⭐⭐⭐(1,225)
+        $24.99</p>
+</div>
+<div>
+    <img class="image8"
+    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6427/6427196_rd.jpg;maxHeight=272;maxWidth=400">
+    <h3>Bowflex Treadmill 10 - Black</h3>
+    <p>⭐⭐⭐⭐(118)
+        $1,599.99</p>
+</div>
+<div>
+    <img class="image8"
+    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6492/6492906cv11d.jpg;maxHeight=272;maxWidth=400">
+    <h3>Samsung - Galaxy Tab A8 10.5" 32GBwith Wi-Fi - Gray</h3>
+    <p>⭐⭐⭐⭐(5)
+        $229.99</p>
+</div>
+   
+</div>
+<br>
+<br>
+<!-- parent10 blue box both same -->
+<div class="parent4">
+   <div>
+       <img style="height:150px"
+       src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYtrmxYwPVXqTR2F84BotNt1Ni9MgXIw50Kdi0ZThD_zdEHDqZ">
+   </div>
+   <div>
+       <h3>Apply today and get</h2>
+<h1 style="color: yellow;
+font-size: 50px;">10% back</h1>
+   </div>
+   <br>
+   <div>
+       <h3>in rewards on your first day of purchases<br>
+        when you are approved for the Card.</h3>
+    </div>
+    <br>
+    <div>
+        <img style="height: 150px;"
+               src="data:image/png;base64,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">
+    </div>
+</div>
+<br>
+<!-- parent last design -->
+<h1>Featured products (15 items)</h1>
+<hr>
+<div class="parent7">
+   <div>
+       <img class="image8"
+       src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6492/6492530_sd.jpg;maxHeight=150;maxWidth=225">
+       <h3>Level - App Smart Lock - Satin Nickel</h3>
+       <p>⭐⭐⭐⭐⭐(20)
+        $249.00</p>
+   </div>
+   <div>
+    <img class="image8"
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdF9h03qhoacjDgSIFEOgLea52Lzj_CAemMTYCoz0v-cES_k0hroa3KLM1ESBqmmkw8-8&usqp=CAU">
+    <h3>Citizen - CZ Smart 44mm Black IP Stainless</h3>
+    <p>⭐⭐⭐⭐⭐$337.99</p>
+</div>
+<div>
+    <img class="image8"
+    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6468/6468170_sd.jpg;maxHeight=272;maxWidth=400">
+    <h3>Elden Ring - PlayStation</h3>
+    <p>⭐⭐⭐⭐⭐$799.99</p>
+</div>
+<div>
+    <img class="image8"
+    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5852/5852919_sd.jpg;maxHeight=272;maxWidth=400">
+    <h3>PlayStation </h3>
+    <p>⭐⭐⭐⭐⭐(394)
+        $799.99</p>
+</div>
+<div>
+    <img class="image8"
+    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6473/6473553_rd.jpg;maxHeight=272;maxWidth=400">
+    <h3>Oculus - Quest 2 Advanced All-In-One</h3>
+    <p>⭐⭐⭐⭐⭐(394)
+        $799.99</p>
+</div>
+<div>
+    <img class="image8"
+    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6341/6341988_rd.jpg;maxHeight=272;maxWidth=400">
+    <h3>Powerbeats Pro Totally Wireless Earphones </h3>
+    <p>⭐⭐⭐⭐⭐(394)
+        $799.99</p>
+</div>
+   
+</div>
+
+
+    <!-- !enter your content here -->
+
+
+
+    <footer class="footer">
+        <div class="footernavicons">
+            <ul id="footernavul">
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/1024px-Icon-round-Question_mark.svg.png"
+                        alt="error">
+
+                    <a href="">
+                        <h4>Visit our Support Center</h4>
+                    </a>
+
+                </li>
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/512/679/679720.png"
+                        alt="error">
+
+                    <a href="">
+                        <h4>Check your Order Status</h4>
+                    </a>
+                </li>
+                <li>
+                    <img  src="https://toppng.com/uploads/preview/delivery-icon-transparent-background-shipping-cost-ico-11562852302e3mtlf1bfz.png"
+                        alt="error">
+
+                    <a href="">
+                        <h4>Shipping, Delivery & Store Pickup</h4>
+                    </a>
+                </li>
+                <li>
+                    <img src="https://icon-library.com/images/return-icon-png/return-icon-png-14.jpg"
+                        alt="error">
+
+                    <a href="">
+                        <h4>Returns & Exchanges</h4>
+                    </a>
+                </li>
+                <li>
+                    <img src="https://icons.veryicon.com/png/o/miscellaneous/template-3/return-guarantee.png"
+                        alt="error">
+
+                    <a href="">
+                        <h4>Price Match Guarantee</h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footerlinks">
+            <div class="helpfullinks">
+                <div class="section">
+                    <h3>Order & Purchase</h3>
+                    <ul>
+                        <li>Check Order Status</li>
+                        <li>Shipping, Delivery & Pickup</li>
+                        <li>Return & Exchanges</li>
+                        <li>Price Match Guarantee</li>
+                        <li>Product Recalls</li>
+                        <li>Trade-In Program</li>
+                        <li>Gift Cards</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h3>Support & Services</h3>
+                    <ul>
+                        <li>Visit our Support Center</li>
+                        <li>Shope with an Expert</li>
+                        <li>Schedule a Service</li>
+                        <li>Manage an Appoinment</li>
+                        <li>Protection & Support Plans</li>
+                        <li>Haul Away & Recycling</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h3>Partnership</h3>
+                    <ul>
+                        <li>Affiliate Program</li>
+                        <li>Advertise with Us</li>
+                        <li>Developers</li>
+                        <li>Best Buy Health</li>
+                        <li>Best Buy Education</li>
+                        <li>Best Buy Business</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h3>Payment Options</h3>
+                    <ul>
+                        <li>My Best Buy Credit Card</li>
+                        <li>Pay Your Bill at Citibank</li>
+                        <li>Lease to Own</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h3>Reward & Membership</h3>
+                    <ul>
+                        <li>Best Buy Totaltech</li>
+                        <li>My Best Buy</li>
+                        <li>View Points & Certificates</li>
+                        <li>Member Offers</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h3>Order & Purchase</h3>
+                    <ul>
+                        <li>Corporate Information</li>
+                        <li>Careers</li>
+                        <li>Corporate Responsibility & Sustainability</li>
+                        <li>Discover & Learn</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footersignin">
+                <a href="">Sign in or Create Account</a>
+                <hr>
+                <form action="">
+                    <h3>Get the latest deals and more. </h3>
+                    <div>
+                        <input type="text" placeholder="Enter email address">
+                        <button style="font-size: 12px"> Sign Up</button>
+                    </div>
+                </form>
+                <hr>
+                <div id="footerappsection">
+                    <img id="footermobileicon"
+                        src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2Q5V3UOdaRRZPOATlCy_d1fivv8CfDUouTKauO4DCdU1Ap6_e"
+                        alt="error">
+                    <div>
+                        <h3>Best Buy App</h3>
+                        <a href="">Learn More</a>
+                    </div>
+                </div>
+                <hr>
+                <div id="footerapplogo">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTG0TeHyYhw1JoG8X7dfV2yOQdtmlpMr05uZ3H9geLS7x0pm4bj"
+                        alt="error">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDThuN1-8NbyukTYLh-cWdV4q9IsOCUyrsRwXXN6X5drv4k708"
+                        alt="">
+                    <img src="https://www.pngitem.com/pimgs/m/82-821814_transparent-ig-png-blue-instagram-icon-png-png.png"
+                        alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6oK-O516yEMZ1emKe_Oj8t4AYuxw5Rf9fpBAB1-wJV_3E_pP1"
+                        alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHcSNXNI-vj6m4IgqegB-bOt6tuQWNyU7hlA&usqp=CAU"
+                        alt="">
+                </div>
+                <hr>
+                <a href="">Forms,blogs & more</a>
+            </div>
+        </div>
+        <div id="leagalnavigation">
+            <div id="feedback">
+                <div>
+                    <p>How was your experience?</p>
+                    <a href="">Give feedback about our website</a>
+                </div>
+                <div>
+                    <button>Mobile Site</button>
+                    <a href="">Best Buy Canada</a>
+                </div>
+            </div>
+            <hr>
+            <div id="legalnavlinks">
+                <a href="">Accessibility</a>
+                <a href="">Terms & Condition</a>
+                <a href="">Privacy</a>
+                <a href="">Interes-Based Ads</a>
+                <a href="">California Privacy Right</a>
+                <a href="">Do Not Sell My Personal Information</a>
+                <a href="">California Supply Chain Trasnparency Act</a>
+            </div>
+            <span>
+                In-store pricing may vary. Prices and offers are subject to change. © 2022 Best Buy. All rights
+                reserved. BEST BUY, the BEST BUY logo, the tag design, and MY BEST BUY are trademarks of Best Buy and
+                its affiliated companies.
+            </span>
+        </div>
+    </footer>
+
+
+
+</body>
+<script src="./navbar.js"></script>
+</html>

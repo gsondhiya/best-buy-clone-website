@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="tv.css" />
+    <title>Cart - Best Buy</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="topcontainer">
+            <div class="topnav">
+                <img id="companylogo"
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png"
+                    alt="error">
+                <button id="menu">
+                    <img id="menulogo" src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="error">
+                    <span>Menu</span>
+                </button>
+
+
+                <div id="searchbar">
+                    <input type="text" id="search" placeholder="Search Best Buy" onclick="goto()">
+                    <img id="searchlogo"
+                        src="https://t3.ftcdn.net/jpg/03/25/73/68/240_F_325736897_lyouuiCkWI59SZAPGPLZ5OWQjw2Gw4qY.jpg"
+                        alt="error">
+
+                </div>
+
+
+
+                <div id="store">
+                    <img id="location" src="https://cdn-icons-png.flaticon.com/512/126/126122.png" alt="">
+                    <span id="storetext">Aiea</span>
+                </div>
+
+
+                <div id="cart">
+                    <img id="cartlogo"
+                        src="https://cdn-icons-png.flaticon.com/512/34/34627.png"
+                        alt="error">
+                        <a href="../cart/cart.html" id="carttext"> Cart</a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="bottomnav">
+            <div class="deals">
+                <a href="">Top deals</a>
+                <a href="../deal of the day/style.html">Deals of the Day</a>
+                <a href="../total tech/totalTech.html">Best Buy Totaltech</a>
+                <a href="">Credit Cards</a>
+                <a href="">Gift Cards</a>
+                <a href="">Gift Ideas</a>
+                <a href="">Health & Wellness</a>
+                <a href="">More</a>
+                <select id="">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="status">
+                <ul>
+                    <li>Account
+                        <div class="sublink">
+                            <ul>
+                                <li><a href="../SIgnIN_SignUp/login.html"> Sign In</a></li>
+                                <li><a href="../SIgnIN_SignUp/signUp.html">Create an Account</a></li>
+                                <li>
+                                    <p> Your Orders</p>
+                                </li>
+                                <li>
+                                    <p>Purchase History</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li>Recently Viewed</li>
+                    <li>Order Status</li>
+                    <li>Saved Items</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- !enter your content here -->
+
+    <div id="grandFather">
+        <div id="filterDiv">
+            <!-- write filter code here -->
+            <input placeholder="Find Product" id="Search" onkeyup="Search()" />
+                   <!-- filter -->
+                   <div id="innerFilterDiv">
+                   <h3 id="priceHeading">Price</h3><br>
+            <button id="filterbtn0">All Products</button><br>
+            <button id="filterbtn1">$00 - $499.99</button><br>
+            <button id="filterbtn2">$500 - $999.99</button><br>
+            <button id="filterbtn3">$1000 - $1499.99</button><br>
+            <button id="filterbtn4">$1500 Above</button><br>
+        
+                <!-- filter -->
+            </div>
+        </div>
+        <div id="parent">
+            
+            <div id="sortDiv">
+                
+                    <p id="sortby">Sort By:</p>
+
+                    <select id="sort" onchange="sortItems()">
+                    <option value="bm">Best Match</option>   
+                    <option value="h2l"> Price High to Low</option>
+                    <option value="l2h">Price Low to High</option>
+                    <option value="acending">Brand A-Z</option>
+                    <option value="decending">Brand Z-A</option>
+                        
+                    </select>
+                    
+               
+            </div>
+            <hr>
+            <div id="container"></div>
+        </div>
+    </div>
+    
+    
+
+
+
+    <!-- !enter your content here -->
+
+
+
+    <footer class="footer">
+        <div class="footernavicons">
+            <ul id="footernavul">
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/1024px-Icon-round-Question_mark.svg.png"
+                        alt="error">
+
+                    <a href="">
+                        <h4>Visit our Support Center</h4>
+                    </a>
+
+                </li>
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/512/679/679720.png"
+                        alt="error">
+
+                    <a href="">
+                        <h4>Check your Order Status</h4>
+                    </a>
+                </li>
+                <li>
+                    <img src="https://toppng.com/uploads/preview/delivery-icon-transparent-background-shipping-cost-ico-11562852302e3mtlf1bfz.png"
+                        alt="error">
+
+                    <a href="">
+                        <h4>Shipping, Delivery & Store Pickup</h4>
+                    </a>
+                </li>
+                <li>
+                    <img src="https://icon-library.com/images/return-icon-png/return-icon-png-14.jpg"
+                        alt="error">
+
+                    <a href="">
+                        <h4>Returns & Exchanges</h4>
+                    </a>
+                </li>
+                <li>
+                    <img src="https://icons.veryicon.com/png/o/miscellaneous/template-3/return-guarantee.png"
+                        alt="error">
+
+                    <a href="">
+                        <h4>Price Match Guarantee</h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footerlinks">
+            <div class="helpfullinks">
+                <div class="section">
+                    <h3>Order & Purchase</h3>
+                    <ul>
+                        <li>Check Order Status</li>
+                        <li>Shipping, Delivery & Pickup</li>
+                        <li>Return & Exchanges</li>
+                        <li>Price Match Guarantee</li>
+                        <li>Product Recalls</li>
+                        <li>Trade-In Program</li>
+                        <li>Gift Cards</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h3>Support & Services</h3>
+                    <ul>
+                        <li>Visit our Support Center</li>
+                        <li>Shope with an Expert</li>
+                        <li>Schedule a Service</li>
+                        <li>Manage an Appoinment</li>
+                        <li>Protection & Support Plans</li>
+                        <li>Haul Away & Recycling</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h3>Partnership</h3>
+                    <ul>
+                        <li>Affiliate Program</li>
+                        <li>Advertise with Us</li>
+                        <li>Developers</li>
+                        <li>Best Buy Health</li>
+                        <li>Best Buy Education</li>
+                        <li>Best Buy Business</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h3>Payment Options</h3>
+                    <ul>
+                        <li>My Best Buy Credit Card</li>
+                        <li>Pay Your Bill at Citibank</li>
+                        <li>Lease to Own</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h3>Reward & Membership</h3>
+                    <ul>
+                        <li>Best Buy Totaltech</li>
+                        <li>My Best Buy</li>
+                        <li>View Points & Certificates</li>
+                        <li>Member Offers</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h3>Order & Purchase</h3>
+                    <ul>
+                        <li>Corporate Information</li>
+                        <li>Careers</li>
+                        <li>Corporate Responsibility & Sustainability</li>
+                        <li>Discover & Learn</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footersignin">
+                <a href="">Sign in or Create Account</a>
+                <hr>
+                <form action="">
+                    <h3>Get the latest deals and more. </h3>
+                    <div>
+                        <input type="text" placeholder="Enter email address">
+                        <button> Sign Up</button>
+                    </div>
+                </form>
+                <hr>
+                <div id="footerappsection">
+                    <img id="footermobileicon"
+                        src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2Q5V3UOdaRRZPOATlCy_d1fivv8CfDUouTKauO4DCdU1Ap6_e"
+                        alt="error">
+                    <div>
+                        <h3>Best Buy App</h3>
+                        <a href="">Learn More</a>
+                    </div>
+                </div>
+                <hr>
+                <div id="footerapplogo">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTG0TeHyYhw1JoG8X7dfV2yOQdtmlpMr05uZ3H9geLS7x0pm4bj"
+                        alt="error">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDThuN1-8NbyukTYLh-cWdV4q9IsOCUyrsRwXXN6X5drv4k708"
+                        alt="">
+                    <img src="https://www.pngitem.com/pimgs/m/82-821814_transparent-ig-png-blue-instagram-icon-png-png.png"
+                        alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6oK-O516yEMZ1emKe_Oj8t4AYuxw5Rf9fpBAB1-wJV_3E_pP1"
+                        alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHcSNXNI-vj6m4IgqegB-bOt6tuQWNyU7hlA&usqp=CAU"
+                        alt="">
+                </div>
+                <hr>
+                <a href="">Forms,blogs & more</a>
+            </div>
+        </div>
+        <div id="leagalnavigation">
+            <div id="feedback">
+                <div>
+                    <p>How was your experience?</p>
+                    <a href="">Give feedback about our website</a>
+                </div>
+                <div>
+                    <button>Mobile Site</button>
+                    <a href="">Best Buy Canada</a>
+                </div>
+            </div>
+            <hr>
+            <div id="legalnavlinks">
+                <a href="">Accessibility</a>
+                <a href="">Terms & Condition</a>
+                <a href="">Privacy</a>
+                <a href="">Interes-Based Ads</a>
+                <a href="">California Privacy Right</a>
+                <a href="">Do Not Sell My Personal Information</a>
+                <a href="">California Supply Chain Trasnparency Act</a>
+            </div>
+            <span>
+                In-store pricing may vary. Prices and offers are subject to change. © 2022 Best Buy. All rights
+                reserved. BEST BUY, the BEST BUY logo, the tag design, and MY BEST BUY are trademarks of Best Buy and
+                its affiliated companies.
+            </span>
+        </div>
+    </footer>
+
+
+
+</body>
+
+<script src="navbar.js"></script>
+<script src="tv.js"></script>
+
+</html>

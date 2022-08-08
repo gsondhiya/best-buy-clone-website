@@ -1,0 +1,322 @@
+
+ #grandFather{
+    border: 1px solid;
+    display: flex;
+    box-sizing : border-box;
+    font-family: Human BBY Digital,Human Fallback,Arial,Arial, Helvetica, sans-serif;
+
+}
+#filterDiv{
+ /* border: 1px solid; */
+ width: 20%;
+ align-items: center;
+ /* background-color: #0046BE; */
+ box-shadow: 0px 2px 4px 2px grey;
+ 
+}
+#parent{
+ border: 1px solid;
+ width: 100%;
+ 
+}
+#sortDiv{
+    
+     height: 75px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1% ;
+}
+#sort{
+    /* margin-top: 2.5%; */
+    /* margin-left: 75%; */
+    width: 250px;
+    height: 35px;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 5%;
+    margin-bottom: 16px;
+    border: 1px solid;
+    box-shadow: 0px 1px 2px 1px grey;
+}
+#sortby{
+    font-size: 20px;
+    
+}
+#innerFilterDiv{
+    /* border: 1px solid; */
+    align-items: center;
+    background-color: white;
+    margin-top: 20%;
+    overflow: scroll;
+    padding-bottom: 5%;
+}
+
+
+#container{
+        
+    justify-content: center;
+   
+    
+    
+}
+#mainBox{
+    /* border: 1px solid; */
+    display: flex;
+    gap: 30px;
+    width: auto;
+    justify-content: center;
+    margin-top: 1%;
+    height:auto;
+    
+    
+}
+
+
+#column2{
+    
+    width: 320px;
+    margin: 0px 50px;
+}
+
+#miniDiv1{
+    display: flex;
+    
+    gap: 1%;
+
+}
+#ratingStars{
+    height: 45px;
+    width: 90px;
+}
+#sku{
+    margin-bottom: 0%;
+}
+
+#miniDiv2{
+    display: flex;
+}
+#miniDiv3{
+    display: flex;
+    height: 35px;
+   
+    text-align: center;
+    align-content: center;
+}
+#subMiniDiv3{
+    
+    width: 80px;
+    color: white;
+    background: rgb(151, 52, 52);
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 4px 0px;
+    margin-right: 5px;
+    
+    
+}
+
+
+
+#price{
+    font-weight: bold;
+    margin-bottom: 0%;
+    font-size: 32px;
+}
+
+
+#addTocartButton{
+    
+    background-color: rgb(253, 219, 27);
+    text-align: center;
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 15%;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0px 1px 2px 1px grey;
+
+}
+#addTocartButton:hover{
+    
+    box-shadow: inset 300px 0 0 0 yellow;
+    
+}
+
+#dollarSign{
+    font-size: 32px;
+    font-weight: bold;
+   
+}
+
+#image{
+    margin-top: 8%;
+
+}
+#save{
+    margin: auto;
+    
+}
+#get{
+    color: green;
+    margin-top: 0%;
+}
+#name{
+    color: blue;
+    
+    
+}
+#name:hover{
+    
+    
+    /* font-weight: bold; */
+    color: rgb(10, 10, 92);
+    
+}
+#location{
+    color: blue;
+    font-size: 14px;
+    margin-top: 0%;
+}
+#location:hover{
+    
+    
+    /* font-weight: bold; */
+    color: rgb(10, 10, 92);
+    
+}
+#extimates{
+    color: blue;
+    font-size: 14px;
+    margin-top: 0%;
+}
+#extimates:hover{
+    
+    
+    /* font-weight: bold; */
+    color: rgb(10, 10, 92);
+    
+}
+#shipping{
+    font-size: 13px;
+    
+}
+#pickup{
+    font-size: 13px;
+}
+#filterbtn0{
+    background-color: #0046BE;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    width: 180px;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    margin-top: 10px;
+    margin-left: 6%;
+    box-shadow: 0px 1px 2px 1px grey;
+}
+#filterbtn0:hover{
+    
+    box-shadow: inset 300px 0 0 0 #14408b;
+    
+}
+
+#filterbtn1{
+    background-color: #0046BE;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    height: 40px;
+    width: 180px;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    margin-left: 6%;
+    box-shadow: 0px 1px 2px 1px grey;
+}
+#filterbtn1:hover{
+    
+    box-shadow: inset 300px 0 0 0 #14408b;
+    
+}
+
+#filterbtn2{
+    background-color: #0046BE;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    height: 40px;
+    width: 180px;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    margin-left: 6%;
+    box-shadow: 0px 1px 2px 1px grey;
+}
+#filterbtn2:hover{
+    
+    box-shadow: inset 300px 0 0 0 #14408b;
+    
+}
+
+#filterbtn3{
+    background-color: #0046BE;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    height: 40px;
+    width: 180px;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    margin-left: 6%;
+    box-shadow: 0px 1px 2px 1px grey;
+}
+#filterbtn3:hover{
+    
+    box-shadow: inset 300px 0 0 0 #14408b;
+    
+}
+
+#filterbtn4{
+    background-color: #0046BE;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    height: 40px;
+    width: 180px;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    margin-left: 6%;
+    box-shadow: 0px 1px 2px 1px grey;
+}
+#filterbtn4:hover{
+    
+    box-shadow: inset 300px 0 0 0 #14408b;
+    
+}
+#priceHeading{
+    text-align: center;
+    font-size: 24px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    border: 1px solid;
+    background-color: white;
+    box-shadow: 0px 1px 2px 1px grey;
+    width: 180px;
+    
+    
+
+}
+
+#Search{
+    height: 20px;
+    width: 180px;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 20%;
+    box-shadow: 0px 1px 2px 1px grey;
+    /* margin-bottom: 18%; */
+    
+}

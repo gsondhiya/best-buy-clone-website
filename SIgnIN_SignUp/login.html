@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+           
+        font-family: Human BBY Digital,Human Fallback,Arial,Arial, Helvetica, sans-serif;
+           background-color: rgb(233, 233, 240);
+
+       }
+
+       
+       body{
+           display: flex;
+           height: 100vh;
+           justify-content: center; 
+           align-items: center;
+           background: linear-gradient(315deg,white,rgba(12, 12, 12, 0.13));
+       }
+       .login{
+           padding-top: 5px;
+           padding: 10px;
+            width:380px;
+            height: 450px;
+            box-shadow: 0px 2px 4px rgb(46, 46, 58);
+            margin: auto;
+            background-color: white;
+            border-radius: 6px;
+            
+           
+       }
+       input{
+        height: 44px;
+      width: 340px;
+      background-color: white;
+      font-size: 17px;
+      color: black;
+      border: 1px solid black;
+      font-weight: bold;
+      margin-left: 18px;
+      margin-top: 10px;
+      border-radius: 3px;
+       }
+       input:hover{
+      background-color: rgba(53, 126, 126, 0.514);
+      font-size: 18px;
+  }
+       #submit{
+      width: 350px;
+      background-color: rgb(59, 62, 218);
+       color: white;
+      height: 40px;
+    }
+    #submit:hover{
+        color: rgb(253, 5, 100);
+        font-size: 20px;
+        background-color: rgb(29, 190, 190);
+    }
+    #loginForm{
+        background-color: white;
+        width: auto;
+    }
+    .logh2{
+        text-align: center;
+        background-color: white;
+    }
+    button{
+        height: 44px;
+        width: 342px;
+        background-color: rgb(87, 36, 230);
+        margin-left: 19px;
+        border: 0px;
+        color: white;
+        font-size: 17px;
+        border-radius: 5px;
+        }
+        #btn2{
+            background-color: white;
+            color: rgb(61, 61, 233);
+            border: 1px solid blue;
+        }
+        #btn2:hover{
+         background-color: rgb(5, 5, 163);
+         color: white;
+        }
+        .or{
+            text-align: center;
+            background-color: white;
+        }
+        a{
+            color: white;
+            background-color:rgb(87, 36, 230);
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="login">
+            <h2 class="logh2">Sign In To Best Buy </h2>
+            <form id="loginForm">
+
+                <input type="text" id="Uname" name="name" placeholder="enter user name"/><br><br>
+            
+                <input type="password" id="Upass" placeholder="User password" name="password"/><br><br>
+
+                <button type="submit" id="submit" name="submit">Sign In</button>
+
+             </form>
+             <p class="or">or</p>
+             <button><a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.bestbuy.com%3Fid%3Dauth248772&response_type=code%20permission%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&client_id=369075948042-gku8boqssoqo5bdnkpg2s43mscgsk68i.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.bestbuy.com&access_type=offline&prompt=consent&origin=https%3A%2F%2Fwww.bestbuy.com&gsiwebsdk=2&flowName=GeneralOAuthFlow">Sign In with Google</a></button><br><br>
+             <button id="btn2" >Sign In with WebAuthn</button>
+        </div>
+    <!-- jdjefhjhfwscwbdew -->
+</body>
+</html>
+  <script>
+      registerdUserArr= JSON.parse(localStorage.getItem("signUser")) || [];
+     
+     console.log(registerdUserArr);
+     
+     document.querySelector("#loginForm").addEventListener("submit",loginFunction);
+      
+     var form=document.querySelector("#loginForm");
+
+      function loginFunction(event){
+          event.preventDefault();
+          
+                        var logname = form.Uname.value;
+                        var logpass = form.Upass.value;
+                        console.log(logname,logpass);
+         
+          flag=true;                
+         for(var i=0; i<registerdUserArr.length; i++)
+         {
+            if(registerdUserArr[i].Name==logname && registerdUserArr[i].Passw==logpass)
+            {
+               flag=false;
+            }
+          }
+          if(flag==false)
+          {
+            alert("login succesful");
+            window.location.href="../homepage/homepagecomplete.html";
+          }
+          else{
+            alert("login failed");
+          }
+  }
+
+  </script>
+    

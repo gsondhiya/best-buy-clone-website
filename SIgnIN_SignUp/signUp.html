@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        *{
+            font-family: Human BBY Digital,Human Fallback,Arial,Arial, Helvetica, sans-serif;
+            background-color: rgb(237, 237, 245);
+        }
+         #baap{
+       height: auto;
+       width: 100%;
+       justify-content: center;
+       background-color: rgb(237, 237, 245);
+       /* border: 1px solid; */
+       
+       
+  }
+  
+  
+ 
+  #formdiv{
+      /* height: 600px; */
+      width: 400px;
+      margin: auto;
+      background-color: white;
+      border-radius:2px;
+      /* margin: 15px 0px 0px 25px; */
+      /* margin-left: 420px; */
+      justify-content: center;
+      box-shadow: 0px 4px 8px  grey
+      
+      
+  }
+  #form{
+      background-color: white;
+      padding-left: 5px;
+  }
+  input{
+      height: 44px;
+      width: 340px;
+      background-color: white;
+      font-size: 17px;
+      color: black;
+      border: 1px solid black;
+      font-weight: bold;
+      margin-left: 18px;
+      margin-top: 10px;
+      border-radius: 3px;
+  }
+  input:hover{
+      background-color: rgba(65, 177, 158, 0.37);
+      font-size: 19px;
+  }
+
+
+  #submit{
+      width: 350px;
+      background-color: rgb(59, 62, 218);
+    color: white;
+      height: 40px;
+    }
+    .account{
+        text-align: center;
+        background-color: white;
+        font-size: 28px;
+    }
+    #or{
+        text-align: center;
+        font-size: 15px;
+    }
+    p{
+        justify-content: center;
+        width: auto;
+        padding-left: 7px;
+    }
+    a{
+        color: rgb(145, 49, 49);
+        font-size: 18px;
+        text-decoration: none;
+        }
+    
+    
+    #submit{
+        height: 44px;
+        width: 342px;
+        background-color: rgb(35, 65, 233);
+        margin-left: 19px;
+        border: 0px;
+        color: white;
+        font-size: 17px;
+        border-radius: 5px;
+        }
+        #submit:hover{
+            background-color: rgb(243, 6, 6);
+            font-size: 20px;
+            
+        }
+        #other{
+            width: 340px;
+      background-color: white;
+      color: blue;
+      height: 40px;
+      margin-left: 25px;
+      border: 1px solid blue;
+      border-radius: 3px;
+        }
+       
+        
+
+    </style>
+</head>
+<body>
+    <div id="baap">
+        
+        <div id="formdiv">
+            <h2 class="account">create an Account</h2>
+            <form id="form">
+           
+            
+            <input type="text" id="name" name="name" placeholder="User Name"/><br><br>
+
+            
+            <input type="email" id="email" placeholder="Email Address" name="email"/><br><br>
+
+            <input type="number" id="phoneNo" placeholder="Mobile Phone Numbe" name="phone number"/><br><br>
+
+            
+            <input type="password" id="pass" placeholder="User password" name="password"/><br><br>
+
+            <input type="password" id="pass2" placeholder="Confirm Password" name="password"/><br><br>
+
+
+            
+
+            <button type="submit" id="submit">Create an Account</button>
+
+               
+            
+
+         </form>
+           <p id="or">or</p>
+           <button id="other">
+               <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.bestbuy.com%3Fid%3Dauth248772&response_type=code%20permission%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&client_id=369075948042-gku8boqssoqo5bdnkpg2s43mscgsk68i.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.bestbuy.com&access_type=offline&prompt=consent&origin=https%3A%2F%2Fwww.bestbuy.com&gsiwebsdk=2&flowName=GeneralOAuthFlow">Sign In With Google</a></button>
+               <p><i>By continuing you agree to our Terms and Conditions,<br> our Privacy Policy, and the My Best Buy® Program Terms.</i></p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+         document.querySelector("#form").addEventListener("submit",SignUp);
+    var SignupUserArr= JSON.parse(localStorage.getItem("signUser")) || [];
+  function SignUp(event){
+    event.preventDefault();
+
+         SignupUserObj={
+            Name:document.querySelector("#name").value,
+            Email:document.querySelector("#email").value,
+            Phno:document.querySelector("#phoneNo").value,
+            Passw:document.querySelector("#pass").value,
+            Passw2:document.querySelector("#pass2").value,
+            }
+            SignupUserArr.push(SignupUserObj);
+            console.log(SignupUserArr);
+
+            localStorage.setItem("signUser",JSON.stringify(SignupUserArr));
+
+            document.querySelector("button").addEventListener("click",function(){
+                var pass1=document.getElementById("pass").value;
+                var pass2=document.getElementById("pass2").value;
+
+                
+
+                if(pass1==pass2   && pass1.length>=6)
+                {
+                    window.location.href="login.html";
+                }
+                else if(pass1.length<6)
+                {
+                   alert("your pasword  must be at least 6 charactors")  
+                }
+
+                else
+                {
+                    alert("wrong password");
+                }
+
+        
+            })
+            
+    }
+</script>
+    

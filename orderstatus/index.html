@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart </title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+    }
+    
+
+    #links {
+            /* display: flex; */
+            justify-content: space-around;
+            padding: 1%;
+            background-color: #0046be;
+            /* box-shadow: 2px 2px 5px 3px rgb(59, 57, 73); */
+        }
+
+        #links>div {
+            /* display: flex;
+             */
+             /* display: block; */
+            color: white;
+            font-size: 23px;
+        }
+
+        #bestbuylogoimage {
+            width: 68px;
+            height: 40px;
+        }
+
+        #links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            /* align-items: center; */
+            /* margin: auto; */
+        }
+
+    #links>div {
+            display: flex;
+            color: white;
+            font-size: 23px;
+        }
+
+        #bestbuylogoimage {
+            width: 68px;
+            height: 40px;
+        }
+
+        #links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            /* align-items: center; */
+            /* margin: auto; */
+        }
+    h1{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .container{
+        /* border: 1px solid black; */
+        box-shadow: 0px 0px 10px black;
+        max-width: 50%;
+     height: 100vh;
+        padding-bottom: 20px;
+        margin: auto;
+        position: relative;
+
+    }
+    #itemdisplay{
+        /* border: 1px solid black; */
+        width: 300px;
+       
+    }
+
+ /* from paymentpage */
+
+ 
+
+
+ #placeorederitemdetails {
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+        }
+
+        #totalitemcontainer {
+            /* border: 1px solid black; */
+            display: flex;
+            margin: 10px 0px;
+        }
+
+        #totalitemcontainer p {
+            font-size: 18px;
+            text-align: end;
+        }
+
+        #innercontainer1 {
+            /* display: flex; */
+            width: 50%;
+        }
+
+        #innercontainer2 {
+            /* display: flex; */
+            width: 50%;
+            padding-left: 70px;
+        }
+
+        #innercontainer2 p:first-child::before {
+            content: "$";
+        }
+
+        #innercontainer2 p:last-child::before {
+            content: "x ";
+        }
+
+        #placeorederitemdetails img {
+            width: 90%;
+            height: 70px;
+            padding: 0px 10px;
+        }
+
+        #placeorederitemdetails h6 {
+            font-size: 10px;
+            padding: 0px 10px;
+        }
+
+
+        #Pmethod {
+            padding: 2px;
+        }
+
+        #debitcard {
+            display: none;
+        }
+
+        #debitcard input {
+            padding: 3px;
+            width: 100%;
+        }
+
+        hr+h6 {
+            font-size: 10px;
+            font-weight: 100;
+            margin-bottom: 10px;
+        }
+
+
+
+
+    /* from paymentpage */
+    /* status css  */
+ #received{
+     position: absolute;
+    /* /* margin: 0px 50%;  */
+    top: 0;
+    left: 50%;
+ }
+ #received::after{
+    content: "OrderReceived";
+    /* left: 60px; */
+    margin-left: 20px;
+ }
+ #Shipped{
+    position: absolute;
+    top: 120px;
+    left: 50.1%;
+ }
+ #Shipped::after{
+     content: "ShippingCompleted";
+     margin-left: 20px;
+ }
+ #Outfordelivery{
+    position: absolute;
+    top: 235px;
+    left: 50.1%;
+ }
+ #Outfordelivery::after{
+     content: "OutForDelivery";
+     margin-left: 20px;
+ }
+ #box{
+     /* border: 1px solid black; */
+     position: absolute;
+     width: 15px;
+     height: 250px;
+     top: 0;
+    left: 50%;
+    border-radius: 10px;
+ }
+ .innerbox{
+    /* border: 1px solid red; */
+    background-color: aqua;
+     position: absolute;
+     width: 13px;
+     height: 10px;
+     border-radius: 10px;
+     /* transition: all 1s ease-in-out .5s;  */
+     animation: move 1s linear forwards;
+ }
+ /* .innerbox:hover{
+    height: 50px;
+ } */
+ @keyframes move {
+     
+     0%{
+        height: 10px;
+     }
+     50%{
+        height: 50px;
+     }
+     100%{
+        height: 100px;
+     }
+ }
+@media screen and (max-width:900px)and (min-width:500px) {
+    
+    .container{
+        /* border: 1px solid black; */
+        box-shadow: 0px 0px 10px black;
+        max-width: 100%;
+        height: 500px;
+        margin: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    
+ #placeorederitemdetails {
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+
+
+
+
+
+        #received{
+     position: absolute;
+    /* /* margin: 0px 50%;  */
+    top: 0;
+    left: 80%;
+ }
+ #received::after{
+    content: "OrderReceived";
+    /* left: 60px; */
+    margin-left: 20px;
+ }
+ #Shipped{
+    position: absolute;
+    top: 120px;
+    left: 80%;
+ }
+ #Shipped::after{
+     content: "ShippingCompleted";
+     margin-left: 20px;
+ }
+ #Outfordelivery{
+    position: absolute;
+    top: 50px;
+    left: 80%;
+ }
+ #Outfordelivery::after{
+     content: "OutForDelivery";
+     margin-left: 20px;
+ }
+ #box{
+     /* border: 1px solid black; */
+     position: absolute;
+     width: 15px;
+     height: 250px;
+     top: 0;
+    left: 80%;
+    border-radius: 10px;
+ }
+ .innerbox{
+    /* border: 1px solid red; */
+    background-color: aqua;
+     position: absolute;
+     width: 13px;
+     height: 10px;
+     border-radius: 10px;
+     /* transition: all 1s ease-in-out .5s;  */
+     animation: move 1s linear forwards;
+ }
+ /* .innerbox:hover{
+    height: 50px;
+ } */
+ @keyframes move {
+     
+     0%{
+        height: 0px;
+     }
+     50%{
+        height: 50px;
+     }
+     100%{
+        height: 100px;
+     }
+ }
+}
+@media screen and (max-width:499px)and (min-width:50px) {
+    
+    .container{
+        /* border: 1px solid black; */
+        box-shadow: 0px 0px 10px black;
+        max-width: 100%;
+        height: 500px;
+        margin: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    
+ #placeorederitemdetails {
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+
+        #innercontainer1 {
+            /* display: flex; */
+            width: 20%;
+        }
+
+        #innercontainer2 {
+            /* display: flex; */
+            width: 20%;
+            padding-left: 70px;
+        }
+
+        #received{
+     position: absolute;
+    /* /* margin: 0px 50%;  */
+    top: 0;
+    left: 60%;
+ }
+ #received::after{
+    content: "OrderReceived";
+    /* left: 60px; */
+    margin-left: 20px;
+ }
+ #Shipped{
+    position: absolute;
+    top: 120px;
+    left: 60%;
+ }
+ #Shipped::after{
+     content: "ShippingCompleted";
+     margin-left: 20px;
+ }
+ #Outfordelivery{
+    position: absolute;
+    top: 50px;
+    left: 60%;
+ }
+ #Outfordelivery::after{
+     content: "OutForDelivery";
+     margin-left: 20px;
+ }
+ #box{
+     /* border: 1px solid black; */
+     position: absolute;
+     width: 15px;
+     height: 250px;
+     top: 0;
+    left: 60%;
+    border-radius: 10px;
+ }
+ .innerbox{
+    /* border: 1px solid red; */
+    background-color: aqua;
+     position: absolute;
+     width: 13px;
+     height: 10px;
+     border-radius: 10px;
+     /* transition: all 1s ease-in-out .5s;  */
+     animation: move 1s linear forwards;
+ }
+ /* .innerbox:hover{
+    height: 50px;
+ } */
+ @keyframes move {
+     
+     0%{
+        height: 0px;
+     }
+     50%{
+        height: 50px;
+     }
+     100%{
+        height: 100px;
+     }
+ }
+
+#outer{
+    position: relative;
+}
+
+}
+.particles-js-canvas-el{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0
+}
+</style>
+<body>
+      
+    <div id="links">
+        <a href="../homepage/homepagecomplete.html"><img id="bestbuylogoimage"
+            src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png" alt="error"></a>
+
+      
+    </div>
+
+ 
+   
+        <div id="particles-js" style="width: 100%;height: 100%;position: fixed;z-index: -1; top: 0;left: 0;">
+
+            <h1>Order Status</h1>
+            
+            <div class="container">
+                <div id="itemdisplay">
+                    <div id="child2">
+                        <!-- <div class="generate"><b>Order Summary</b></div> -->
+                        
+                        
+                        <div id="placeorderitemprices">
+                            
+                            <div id="placeorederitemdetails">
+                                
+                                
+            
+            
+                            </div>
+            
+                            <hr>
+                            <h6>including taxes and discount</h6>
+                            <div>
+                                <span id="Total">Total</strong></span>
+            
+                                <!-- <span><strong>$</strong></span> -->
+                                <span id="ordereditemtotal">0</strong></span>
+                            </div>
+                        </div>
+            
+            
+                    </div>
+                </div>
+            
+                <input type="radio" id="received">
+                <input type="radio" id="Shipped">
+                <input type="radio" id="Outfordelivery">
+                <div id="box">
+                    <div class="innerbox"></div>
+                </div>
+        
+            </div>
+        
+
+
+
+
+
+        </div>
+        
+        
+
+    
+   
+
+</body>
+<script>
+
+
+var payment = JSON.parse(localStorage.getItem("paymentitems"));
+console.log(payment);
+
+function displaydata() {
+  document.querySelector("#placeorederitemdetails").innerHTML = "";
+  payment.map(function (ele, index, array) {
+    var div = document.createElement("div");
+    div.setAttribute("id", "totalitemcontainer");
+
+    var innercontainer1 = document.createElement("div");
+    innercontainer1.setAttribute("id", "innercontainer1");
+
+    var itemimage = document.createElement("img");
+    itemimage.setAttribute("src", ele.image_url);
+    var itemname = document.createElement("h6");
+    itemname.innerText = ele.name;
+
+    innercontainer1.append(itemimage, itemname);
+
+    var innercontainer2 = document.createElement("div");
+    innercontainer2.setAttribute("id", "innercontainer2");
+
+    var paymentpageitemprice = document.createElement("p");
+    paymentpageitemprice.innerText = ele.price;
+    var paymentpageitemquantity = document.createElement("p");
+    paymentpageitemquantity.innerText = ele.quant;
+
+    innercontainer2.append(paymentpageitemprice, paymentpageitemquantity);
+
+    div.append(innercontainer1, innercontainer2);
+    document.querySelector("#placeorederitemdetails").append(div);
+  });
+}
+displaydata();
+
+function showtotal() {
+  var Total = payment.reduce(function (acc, ele, index, array) {
+    return acc + ele.price * ele.quant;
+    console.log(ele.quant);
+  }, 0);
+
+  var totalprice = document.querySelector("#ordereditemtotal");
+  totalprice.innerText = Math.floor(Total - 100 + Math.floor(Total * 0.12));
+  if (totalprice.innerText == -100) {
+    totalprice.innerText = 0;
+  }
+}
+showtotal();
+
+function changemethod() {
+  var howtopay = document.querySelector("#Pmethod").value;
+  console.log(howtopay);
+  if (howtopay == "db") {
+    var x = document.querySelector("#debitcard");
+    x.style.display = "block";
+  } else if (howtopay == "cod") {
+    var x = document.querySelector("#debitcard");
+    x.style.display = "none";
+  } else if (howtopay == "cd") {
+    var x = document.querySelector("#debitcard");
+    x.style.display = "none";
+  }
+  displaydata();
+}
+
+function tothankspage() {
+  window.location.href = "../thanks/thanks.html";
+}
+
+
+
+
+</script>
+<script src="../orderstatus/particles.js"></script>
+<script src="../orderstatus/app.js"></script>
+</html> 

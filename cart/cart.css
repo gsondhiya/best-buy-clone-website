@@ -1,0 +1,472 @@
+*{
+    box-sizing: border-box;
+    font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
+    font-size: 13px;
+}
+.contentcontainer{
+    display: flex;
+    padding: 0px 0px 0px 40px;
+    background-color: 
+    #f4f6f9;
+    position: relative;
+
+}
+#ordereditems{
+ /* border: 1px solid black; */
+    /* height: 500px; */
+    flex-basis: 65%;
+}
+#ordereditems>h1{
+    font-size: 20px;
+    margin: 24px 0 16px;
+}
+#paidmembership{
+    /* border: 1px solid black; */
+    height: 91px;
+    display: flex;
+    margin-bottom: 24px;
+    padding: 0 8px;
+    background-color: #fff;
+}
+#paidmembership>img{
+    /* border: 1px solid black; */
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    flex-basis: 8%;
+    margin: 13.5px 8px;
+}
+#paidmembershipbanner{
+    /* border: 1px solid black; */
+    flex-basis: 52%;
+}
+#paidmembershipbanner>h2{
+    padding: 24px 0px 8px;
+}
+#paidmembershipbutton{
+    /* border: 1px solid black; */
+    flex-basis: 40%;
+    margin-left: auto;
+    padding: 28px 16px;
+}
+#paidmembershipbutton>button{
+    margin-left: 133.3px;
+    border-style: solid;
+    border-width: 0;
+    height: 35px;
+    padding-left: 28px;
+    padding-right: 28px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #0046be;
+}
+#specialoffer>button div{
+    display: inline-flex;
+}
+#specialoffer>button{
+    margin-bottom: 24px;
+
+    padding: 24px;
+    background-color: #fff;
+    border: 1px solid #e0e6ef;
+    text-align: left;
+    height: auto;
+    font-weight: 400;
+    color: #1d252c;
+    display: inline-block;
+    /* background: transparent; */
+    width: 100%;
+}
+
+
+/* css for the elements added from local storage  */
+
+#cartitems{
+    /* border: 2px solid black; */
+    width: 100%;
+    /* height: 300px; */
+    /* position: relative; */
+    /* background-color: #000; */
+}
+#addeditemcontainer{
+    /* border: 1px solid aqua; */
+    background-color: white;
+width: 100%;
+/* height: 400px; */
+padding-bottom: 30px;
+margin-bottom: 10px;
+border-bottom: 2px solid rgba(0, 0, 0, 0.123);
+
+}
+
+
+/* css for section1  */
+#section1{
+    /* border: 2px solid red; */
+    /* height: 200px; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+/* #section1 div{
+} */
+#section1itemdiv{
+    /* border: 1px solid orangered; */
+flex-basis: 35%;
+display: flex;
+/* background-color: #000; */
+padding: 24px 0px 0px 24px;
+}
+#section1itemdiv a{
+    margin: 0px 5px;
+    font-size: 13px;
+    color: #0046BE
+
+}
+#section1itemdiv img{
+    width: 56px;
+    height: 56px;
+}
+
+
+
+
+#section1deliverydiv{
+    padding: 24px 0px 0px 24px;
+    /* border: 1px solid orangered; */
+flex-basis: 35%;
+}
+#section1deliverydiv div:first-child{
+    margin-bottom: 5px;
+}
+#section1deliverydiv div:first-child span{
+    font-weight: 700;
+}
+#section1deliverydiv div:nth-child(2){
+    margin-bottom: 15px;
+}
+
+
+
+
+
+#section1quantitydiv{
+    /* border: 1px solid yellow; */
+flex-basis: 15%;
+padding: 24px 0px 0px 24px;
+}
+#section1quantitydiv span{
+    font-weight: 900;
+    font-size: 16px;
+}
+#section1quantitydiv button{
+    margin: 2px;
+    background-color: white;
+    border-color: #0046be;
+    color: #0046be;
+}
+#section1quantitydiv p{
+    margin: 5px 0px;
+    color: #0046be;
+}
+
+#section1pricediv{
+    /* border: 1px solid orangered; */
+flex-basis: 15%;
+padding: 24px 0px 0px 64px;
+}
+
+#section1pricediv span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* css for section2 */
+
+
+#section2{
+    /* border: 2px solid red; */
+    /* height: 200px; */
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+/* #section2 div{
+    border: 2px solid black;
+} */
+#protectionplandiv{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 20px;
+    display: flex;
+    padding-left: 50px;
+    margin-bottom: 10px;
+}
+#protectionplandiv hr{
+   border: 1px solid rgba(0, 0, 0, 0.123);
+   width: 80%;
+   height: 1px;
+   margin-top: 8px;
+   background-color: rgba(0, 0, 0, 0.034);
+}
+
+#seeallplandiv{
+    /* border: 1px solid black; */
+    display: flex;
+    padding-left: 50px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    
+}
+
+#innerdiv1>img{
+    width: 28px;
+    height: 28px;
+    flex-basis: 20%;
+    margin-right: 20px;
+}
+#innerdiv2{
+    flex-basis: 60%;
+}
+#innerdiv3>button{
+    padding: 10px 20px;
+    color: #0046be;
+    background-color:white ;
+    border-color: #0046BE;
+    border-radius: 5px;
+}
+
+#returnperioddiv{
+    /* border: 1px solid black; */
+    /* display: flex; */
+    width: 100%;
+    padding-left: 50px;
+    margin-bottom: 10px;
+}
+#returnperioddiv>div:first-child{
+    display: flex;
+    /* background-color: #000; */
+}
+#returnperioddiv h4{
+width: max-content
+
+}
+#returnperioddiv hr{
+    border: 1px solid rgba(0, 0, 0, 0.021);
+    width: 80%;
+    height: 1px;
+    margin-top: 8px;
+    background-color: rgba(0, 0, 0, 0.158);
+ }
+
+
+
+ /* !ordersummary section css  */
+
+
+ .ordersummary{
+     flex-basis: 35%;
+     /* border: 1px solid black; */
+     background-color: #fff;
+     margin: 0px 0px 10px 40px;
+     /* background: #000; */
+ /* position: sticky;
+ top: 0;
+ left: 0; */
+ 
+     padding: 24px 40px;
+     padding-bottom: 50px;
+     
+ }
+ .ordersummary hr{
+     margin: 15px 0px;
+ }
+ .ordersummary h1{
+    margin: 15px 0px;
+   font-size: 18px;
+}
+ .ordersummary h2:first-child{
+     text-align: center;
+     font-size: 20px;
+ }
+ #itemprices{
+     /* border: 1px solid black; */
+     margin: 10px 0px;
+ }
+ #itemprices>div{
+margin: 0px 0px 8px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+ }
+ #itemprices span:last-child::before{
+     content: "$";
+ }
+ #Total,#ordereditemtotal{
+     font-size: 16px;
+     font-weight: 700;
+ }
+
+
+
+ #checkoutbuttoncontainer{
+    margin: 10px 0px;
+ }
+ #checkoutbutton{
+    /* background-color: #000; */
+    height: 40px;
+    margin-bottom: 20px;
+}
+#checkoutbutton button{
+    color: black;
+     background-color: #ffe000;
+     border: 0px;
+     display: block;
+     margin: auto;
+     height: 100%;
+     width: 100%;
+     font-size: 16px;
+     font-weight: 700;
+     border-radius: 5px;
+ }
+ #paypalbutton{
+    height: 40px;
+    margin-bottom: 10px;
+ }
+ #paypalbutton>button{
+    display: block;
+    background-color: black;
+    color: white;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+ }
+
+
+
+ #ordersummaryadditional{
+     /* border: 1px solid red; */
+     padding: 10px 0px;
+     margin-bottom: 5%;
+    
+ }
+ #creditcard{
+     width: 90px;
+     height: 52px;
+ }
+ #ordersummaryadditional>h2{
+     margin: 15px 0px;
+ }
+ #cardsavings{
+     display: flex;
+ }
+ #cardsavings p{
+     margin: 10px 15px;
+ }
+
+
+
+
+
+
+ .open-button {
+    background-color: #0046be;
+    color: white;
+    /* padding: 16px 20px; */
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 13px;
+    right: 18px;
+    height:40px;
+    width: 50px;
+    border-radius: 50%;
+  }
+
+
+  .open-button2 {
+    background-color: black;
+    color: white;
+    /* padding:16px 20px; */
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    left: 795px;
+    height:40px;
+    width: 190px;
+    
+  }
+  
+  
+  .chat-popup {
+      
+    display: none;
+    position: fixed;
+    bottom: 3px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  
+  .form-container {
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+  }
+  
+ 
+  .form-container textarea {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 100px;
+  }
+  
+  
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+ 
+  .form-container .btn {
+    background-color: black;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  .form-container .btn:hover, .open-button2:hover {
+    opacity: 1;
+  }

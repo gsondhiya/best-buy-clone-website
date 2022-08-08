@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+
+    <style>
+
+        #links {
+                    display: block;
+                    /* justify-content: start; */
+                    padding: 1%;
+                    background-color: #0046be;
+                    /* box-shadow: 2px 2px 5px 3px rgb(59, 57, 73); */
+                }
+        
+                #links>div {
+                    display: flex;
+                    color: white;
+                    font-size: 23px;
+                }
+        
+                #bestbuylogoimage {
+                    width: 68px;
+                    height: 40px;
+                }
+        
+                #links a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 18px;
+                    /* align-items: center; */
+                    margin: auto;
+                }
+            </style>
+
+    <style>
+        *{
+            color: #040c13;
+            font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
+            font-size: 13px;
+
+        }
+        #head1{
+            
+            height: 52px;
+            width: 100%;
+        
+            }
+         .page-title{
+             margin-top: 10px;
+             font-size: 22px;
+             padding-left: 11%;
+         }
+         #head2{
+            
+             height: 35px;
+             width: 100%;
+             background-color: #ecf2f7;
+         }
+         .span2{
+             padding-left:5px;
+             color: blue;
+             font-weight: 30px;
+        
+        }
+        .span2:hover{
+            color: rgba(4, 4, 22, 0.582);
+            text-decoration: underline;
+            font-size: 16px;
+        }
+         .span1{
+             padding-top: 7%;
+             margin-left: 11%;
+         } 
+         #toltech{
+             /* height: 470px; */
+             width: 100%;
+             background-color: #aebbbbf6;
+             padding-top: 4%;
+             padding-bottom: 4%;
+         }
+         .logo{
+             height: 60px;
+             width: 273px;
+             padding-top: 8%;
+         }
+         .imgdiv{
+
+             width: 275px;
+             margin-left: 11%;
+             
+         }
+         .the{
+             margin-left: 11%;
+             color: #0046BE;
+             font-size: 35px;
+             font-weight:100;
+             
+         }
+         .dot{
+             font-size: 50px;
+             color: black;
+
+         }
+         #para{
+             margin-left: 11%;
+             text-justify:center;
+             margin-bottom: 1%;
+             margin-top: 10px;
+         }
+         .star{
+             height: 46px;
+             display: flex;
+             width: 30%;
+            margin-top: -1%;
+             margin-left: 11%;
+         }
+         #sticker{
+
+             height: 30px;
+             margin-bottom: 20px;
+         }
+
+         .logostar{
+             padding-top: 5px;
+            height: 45px;
+            width: 90px;
+         }
+         #no{
+             
+             padding-left: 5px;
+             height: 30px;
+             margin-top: 18px;
+         }
+         .review{
+             color: #2267dd;
+             }
+        #yearly{
+            margin-left: 11%;
+            margin-top: 2px;
+        }
+        #addcard{
+            height: 34px;
+            width: 30%;
+            text-align: center;
+            border-radius: 6px;
+            background-color: rgb(224, 224, 12);
+            margin-left: 11%;
+            padding-top: 5px;
+            border: 1px solid black;
+        
+            
+            
+        }
+        #addcard:hover{
+            background-color: rgb(247, 247, 3);
+        }
+        .material-icons{
+            padding-top: 2px;
+            height: 20px;
+            position: absolute;
+            padding-left: 5%;
+        }
+        #benefits,#if{
+             font-size: 30px;
+             margin-left: 11%;
+             margin-top: 50px;
+        }
+        #if{
+            margin-top: 2%;
+        }
+        #grid{
+            display: grid;
+            margin: auto;
+            margin-top: 4%;
+            width: 70%;
+            gap:15px;
+        
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+        }
+        #grid>div{
+            padding: 5px;
+            height: 170px;
+            width: 200px;
+        
+            color: #0046BE;
+            font-size: 18px;
+        }
+        .griddiv{
+            margin-left: 32px;
+            width: 100px;
+            height: 100px;
+        }
+        b{
+            margin: auto;
+        }
+        #bestbuy{
+            background-color: #201ceefd;
+            height: 260px;
+            width: 70%;
+            margin: auto;
+            margin-top: 10px;
+        
+        }
+        .imge{
+            width: 142px;
+            height: 40px;
+        }
+        #bestbuy>div{
+            padding-top: 16px;
+            margin-left: 20px;
+        }
+        #bestbuy>div+h2{
+            margin-top: 9px;
+            margin-left: 20px;
+            font-size: 40px;
+            color:white
+        }
+        h2+p{
+            font-size: 17px;
+            padding-left: 20px;
+            color: white;
+        }
+        button{
+            background-color: yellow;
+            color: black;
+            font-size: 17px;
+            margin-left: 20px;
+            height: 30px;
+            width: 130px;
+            border-radius: 5px;
+        }
+         #ldki{
+            display: flex;
+            height: 400px;
+            width: 70%;
+            margin: auto;
+    
+            margin-top: 40px;
+        }
+        #ldki>div{
+            height:98;
+            width: 100%;
+            
+        }
+        #ldki>div>img{
+            width: 473px;
+            height: 322px;
+        }
+        #khali>h1{
+            margin-top: 28%;
+            padding-left: 16px;
+        }
+        #khali>h1+p{
+            padding-left: 16px;
+            font-size: 18px;
+            color: rgb(110, 105, 105);
+        }
+        p+p{
+            color: #0046BE;
+            padding-left: 22px;
+        }
+        #ldki+h1{
+            margin-left: 15%;
+        }
+        #grid2{
+            display: grid;
+            margin: auto;
+            width: 70%;
+            gap: 20px;
+            grid-template-columns: repeat(4,1fr);
+        
+        }
+        #grid2>div{
+            height: 300px;
+            
+        }
+        #grid2>div>img{
+            width: 222px;
+            height: 151px;
+        }
+        #grid2>div>b{
+            color: rgb(116, 112, 112);
+        }
+        hr{
+            width: 70%;
+            margin: auto;
+        }
+        hr+b{
+           color: #0046BE;
+           margin-left: 43%;
+        }
+        #grid3{
+            display: flex;
+            margin: auto;
+            width: 70%;
+            height: 320px;
+            margin-top: 10px;
+            background-color: #d8dbe0;
+        }
+        #grid3>div:nth-child(1){
+            width: 300px;
+            margin: auto;
+        
+        }
+        #grid3>div:nth-child(2){
+            margin: auto;
+            width: 55%;
+
+        }
+        #grid3>div>img{
+             width: 300px;
+        }
+        .end>h4{
+            color: #0046BE;
+        }
+        .end>b{
+            color: rgb(116, 107, 107);
+        }
+        #grid3+h2{
+            margin-left: 15%;
+            margin-top: 4%;
+        }
+        h2+hr{
+            width: 70%;
+            margin-top: -1%;
+        }
+        hr+h5{
+            width: 70%;
+            margin-left: 15%
+        }
+        h5+p{
+            width: 65%;
+            margin-left: 17%;
+            color: rgb(102, 95, 95);
+        }
+       
+
+
+        
+        
+
+</style>
+</head>
+<body>
+
+    <div id="links">
+        <a href="../homepage/homepagecomplete.html"><img id="bestbuylogoimage"
+            src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png" alt="error">
+        </a>
+        <!-- <div><a href="cart.html">Return to Cart</a></div> -->
+    </div>   
+
+
+            <div id="head1">
+                <h1 class="page-title">Best Buy Totaltech™</h1>
+            </div>
+            <div id="head2">
+                <span class="span1">Already a member?</span>
+                <span class="span2">Go to your account to manage benefits and get support</span>
+            </div>
+            <div id="toltech">
+                <div class="imgdiv">
+                    <img class="logo"
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-66004-tt-logo-der-2x-215847.png" alt="">
+                </div>
+                <h2 class="the">The membership you and<br>your tech deserve<span class="dot">.</span></h2>
+
+                <p id="para">Best Buy Totaltech™ gives you peace of mind in one comprehensive plan:<br> 
+                    around-the-clock tech support, up to 24 months of product protection 
+                    on<br> most Best Buy purchases with an active membership,1See Disclosur 1 free delivery and<br> 
+                    standard installation,2See Disclosure2 plus other great benefits. 
+                    It’s the plan you need to<br> protect the tech you love.
+                </p>
+                <div class="star">
+                    <div id="sticker">
+                        <img class="logostar" 
+                        src="https://confirmedbest.com/ViewAssets/Images/4.5stars.svg" alt="">
+                    </div>
+
+                    <div id="no">
+                        <span class="review">(4045 reviews)</span>
+                    </div>
+                </div>
+                <h1 id="yearly">$199.99 yearly memberships</h1>
+                <div id="addcard"><span><img class="material-icons"src="file:///C:/Users/abhishek/Downloads/add_shopping_cart_black_24dp.svg" alt="">
+                </span>add to cart </div>
+                <h1 id="benefits">Benefits of a Best Buy Totaltech™ membership.</h1>                                                                  
+                <p id="if">If you're interested in becoming a member and seeing how much you’
+                        ll save using the services<br> 
+                        benefits listed below, simply add Totaltech to your cart and then explore BestBuy.com.</p>
+        </div>
+            <div id="grid">
+                    <div><img 
+                        class="griddiv" 
+                        src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/benefits-GeekSquad-Logo-gl65363-ee4a55b0-4617-42aa-8224-8ac621634780.jpg" 
+                        alt=""><br>
+                        <b>Free Geek Squad® tech support available 24/7/365</b>
+                    </div>
+                    <div><img 
+                        class="griddiv"
+                        src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/sol-85267-protection-icon-f7d4ed27-1e4d-47b9-bd96-7cc826906670.jpg" 
+                        alt=""><br><b>Up to 24 months of product protection with an active membership.1</b>
+                    </div>
+                    <div><img class="griddiv"
+                        src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/sol-85267-repair-icon-af909eb3-4cd0-4a9a-b146-ec15b0ee8545.jpg"
+                        alt=""><br><b>Free delivery and standard installation for new Best Buy purchases.2</b>
+                    </div>
+                    <div><img class="griddiv"
+                        src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/sol-85267-vip-icon-709a40f6-0d5a-42ff-b755-76e3fed483fa.jpg"
+                        alt=""><br><b>VIP access to dedicated phone and chat teams.</b>
+                    </div>
+                    <div><img class="griddiv"
+                        src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/sol-85267-save-icon-7663465b-4dcf-44a4-b3e4-eeda91972bf1.jpg" 
+                        alt=""><br><b>Access to exclusive Totaltech member prices.</b>
+                    </div>
+                    <div><img class="griddiv"
+                          src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/sol-85267-shipping-icon-aecefc6a-cf2b-4cf6-ba03-a9474b28b3d2.jpg" 
+                          alt=""><br><b>Free 2-day shipping.3</b>
+                        </div>
+                    <div><img class="griddiv"
+                        src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/sol-85267-shipping-icon-aecefc6a-cf2b-4cf6-ba03-a9474b28b3d2.jpg" 
+                        alt=""><br><b>Extended 60-day return and exchange window.4</b>
+                    </div>
+                    <div><img class="griddiv"
+                        src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/sol-85267-return-icon-9fe2eb3e-88e3-4611-b535-0be625bf584f.jpg" 
+                        alt=""><br><b>Everyday savings on repairs, advanced services and more.</b>
+                    </div>
+            </div>
+
+        <div id="bestbuy">
+                <div><img class="imge"src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-66613-total-tech-tall-logo-588dcc64-257f-4bc3-9003-0114cee4bfc7.png" alt=""></div>
+                <h2>Exclusive product savings for members</h2>
+                <p>Whether you’re a Best Buy Totaltech™ member or thinking of joining, here are 
+                   today’s featured discounts, with many more available <br>online and in store.
+                </p>
+                <button><b>Shop Now<b></button>
+        </div>
+
+        <div id="ldki">
+            <div><img 
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/MMT-236666-geek-agent-177925.jpg;maxHeight=455;maxWidth=484" alt="">
+            </div>
+            <div id="khali">
+                <h1>Tech help, day and night.</h1>
+                <p>Let us be your guide through the easiest and most difficult tech questions. 
+                    Get unlimited 24/7/365 tech<br>support on all the technology in your home, no matter where you bought it. 
+                    We’re always ready to help you in store, over the phone and 24/7 online.</p>
+                <p>Learn more about Geek Squad® support</p>
+
+            </div>
+        </div>
+        <h1>Even more Best Buy Totaltech™ benefits.</h1>
+        
+        <div id="grid2">
+            <div><img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-66004-pricing-pol-v2-der-215911.jpg" 
+                  alt=""><h2>Exclusive member pricing.</h2>
+                  <b>Take advantage of discounts on select products and services throughout the year.6</b>
+            </div>
+            <div>
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/sol83704-entrypoint-pol-der-b2582a14-5d1d-47ce-b868-49807f8d4ce0.jpg" 
+                alt=""><h2>Get free 2-day shipping.</h2>
+                <b>You’ll also get free same-day delivery whenever available. No minimum purchase required.3</b>
+            </div>
+            <div>
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/top-EVN-188981-NvidiaRTX-StoreEvent-BBY_Store_DER-67e06f75-2c5d-439f-9151-987612bb672c.jpg" 
+                alt=""><h2>Get more time to return.</h2>
+                <b>Enjoy an extended 60-day return and exchange window on most products. Plus, all restocking fees will be waived.4</b>
+            </div>
+            <div>
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-66004-tt-repair-pol-v2-der-215912.jpg" 
+                alt=""><h2>Everyday savings on repairs and more.</h2>
+                <b>Save 20% on labor for repairs and advanced services, and 10% on labor for custom installations.7</b>
+            </div>
+        </div><br><br>
+        <hr>
+        <b>Read our Totaltech FAQs</b>
+        <hr>
+
+        <div id="grid3">
+            <div ><img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/pol-my-best-buy-logo-171820.jpg;maxHeight=305;maxWidth=390" 
+                alt="">
+            </div>
+            <div class="end">
+               <h1>Earn reward points and get extra savings.</h1>
+               <b>When you join Best Buy Totaltech™, you’ll also be a member of the My Best Buy® program, which allows you to earn reward points, shop exclusive deals and more.
+
+                If you’re not interested in Totaltech, you can still sign up to be a My Best Buy member for free.</b>
+                <h4>Learn about the My Best Buy program</h4>
+            </div>
+        </div>
+        <h2>Disclosures.</h2><hr>
+
+       <h5>A Best Buy Totaltech™ membership is subject to complete Terms and Conditions. A My Best Buy® account is required, subject to the My Best Buy Program Terms. This membership renews automatically each year and your chosen card will be charged $199.99, or the then-current price, plus tax, on your yearly renewal date unless you cancel before then by calling 1-888-BEST BUY (1-888-237-8289) or by managing subscriptions on your BestBuy.com account. We will send you advance notice 
+           of membership renewal to the email address you provide, including notice of any price changes.</h5>
+
+       <p>1. See the complete Terms and Conditions for Best Buy Protection and AppleCare+ under the “Protection” tab. Best Buy Product Protection, Inc. is the Obligor and Administrator of the Coverage under Best Buy Protection Plans. The company obligated under AppleCare+ in the United States is AppleCare Service Company, Inc., an Arizona corporation and wholly owned subsidiary of Apple Inc., doing business in Texas as Apple CSC Inc. Service fees and claim limits apply.<br><br>
+        2. Some limitations may apply. Fees for necessary parts, accessories or permits will be charged. Delivery and standard installation must be scheduled as part of the qualifying product purchase.<br><br>
+        3. To get free 2-day shipping and free same-day delivery, make sure you are signed into your account. You can log into your account at any time during your shopping experience to ensure you are able to take advantage of your membership benefits. 2-day shipping and same-day delivery not available in all areas. Select items limited to free standard shipping at the time of purchase. Limitations apply, including extra days for shipping due to limited inventory, constrained carrier capacity, or other conditions beyond our control. See details for same-day delivery at Same-Day Delivery FAQs. Orders to P.O. Boxes may result in additional shipping time.<br><br>
+        4. Members will benefit from a 60-day return and exchange period on “most products,” as indicated in our Returns and Exchanges Policy. Membership also includes a waiver of all restocking fees. All other terms and conditions of our Returns and Exchanges Policy apply, including, for example, the 14-day return period on activatable devices (select carriers may have a longer return period).<br><br>
+        5. Some limitations may apply on free delivery. Free haul-away applies when a haul-away is part of a scheduled delivery and/or installation.<br><br>
+        6. Totaltech member prices will be displayed on select products in store and online for recognized members.<br><br>
+        7. Discounts only apply to then-current labor costs. Fees for necessary parts, accessories or permits will be charged.<br><br>
+    </p>
+
+</body>
+
+
+<!-- footer -->
+
+<footer class="footer">
+    <div class="footernavicons">
+        <ul id="footernavul">
+            <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/1024px-Icon-round-Question_mark.svg.png"
+                    alt="error">
+
+                <a href="">
+                    <h4>Visit our Support Center</h4>
+                </a>
+
+            </li>
+            <li>
+                <img src="https://cdn-icons-png.flaticon.com/512/679/679720.png"
+                    alt="error">
+
+                <a href="">
+                    <h4>Check your Order Status</h4>
+                </a>
+            </li>
+            <li>
+                <img  src="https://toppng.com/uploads/preview/delivery-icon-transparent-background-shipping-cost-ico-11562852302e3mtlf1bfz.png"
+                    alt="error">
+
+                <a href="">
+                    <h4>Shipping, Delivery & Store Pickup</h4>
+                </a>
+            </li>
+            <li>
+                <img src="https://icon-library.com/images/return-icon-png/return-icon-png-14.jpg"
+                    alt="error">
+
+                <a href="">
+                    <h4>Returns & Exchanges</h4>
+                </a>
+            </li>
+            <li>
+                <img src="https://icons.veryicon.com/png/o/miscellaneous/template-3/return-guarantee.png"
+                    alt="error">
+
+                <a href="">
+                    <h4>Price Match Guarantee</h4>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="footerlinks">
+        <div class="helpfullinks">
+            <div class="section">
+                <h3>Order & Purchase</h3>
+                <ul>
+                    <li>Check Order Status</li>
+                    <li>Shipping, Delivery & Pickup</li>
+                    <li>Return & Exchanges</li>
+                    <li>Price Match Guarantee</li>
+                    <li>Product Recalls</li>
+                    <li>Trade-In Program</li>
+                    <li>Gift Cards</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>Support & Services</h3>
+                <ul>
+                    <li>Visit our Support Center</li>
+                    <li>Shope with an Expert</li>
+                    <li>Schedule a Service</li>
+                    <li>Manage an Appoinment</li>
+                    <li>Protection & Support Plans</li>
+                    <li>Haul Away & Recycling</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>Partnership</h3>
+                <ul>
+                    <li>Affiliate Program</li>
+                    <li>Advertise with Us</li>
+                    <li>Developers</li>
+                    <li>Best Buy Health</li>
+                    <li>Best Buy Education</li>
+                    <li>Best Buy Business</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>Payment Options</h3>
+                <ul>
+                    <li>My Best Buy Credit Card</li>
+                    <li>Pay Your Bill at Citibank</li>
+                    <li>Lease to Own</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>Reward & Membership</h3>
+                <ul>
+                    <li>Best Buy Totaltech</li>
+                    <li>My Best Buy</li>
+                    <li>View Points & Certificates</li>
+                    <li>Member Offers</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>Order & Purchase</h3>
+                <ul>
+                    <li>Corporate Information</li>
+                    <li>Careers</li>
+                    <li>Corporate Responsibility & Sustainability</li>
+                    <li>Discover & Learn</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footersignin">
+            <a href="">Sign in or Create Account</a>
+            <hr>
+            <form action="">
+                <h3>Get the latest deals and more. </h3>
+                <div>
+                    <input type="text" placeholder="Enter email address">
+                    <button style="font-size: 12px"> Sign Up</button>
+                </div>
+            </form>
+            <hr>
+            <div id="footerappsection">
+                <img id="footermobileicon"
+                    src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2Q5V3UOdaRRZPOATlCy_d1fivv8CfDUouTKauO4DCdU1Ap6_e"
+                    alt="error">
+                <div>
+                    <h3>Best Buy App</h3>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+            <hr>
+            <div id="footerapplogo">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTG0TeHyYhw1JoG8X7dfV2yOQdtmlpMr05uZ3H9geLS7x0pm4bj"
+                    alt="error">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDThuN1-8NbyukTYLh-cWdV4q9IsOCUyrsRwXXN6X5drv4k708"
+                    alt="">
+                <img src="https://www.pngitem.com/pimgs/m/82-821814_transparent-ig-png-blue-instagram-icon-png-png.png"
+                    alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6oK-O516yEMZ1emKe_Oj8t4AYuxw5Rf9fpBAB1-wJV_3E_pP1"
+                    alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHcSNXNI-vj6m4IgqegB-bOt6tuQWNyU7hlA&usqp=CAU"
+                    alt="">
+            </div>
+            <hr>
+            <a href="">Forms,blogs & more</a>
+        </div>
+    </div>
+    <div id="leagalnavigation">
+        <div id="feedback">
+            <div>
+                <p>How was your experience?</p>
+                <a href="">Give feedback about our website</a>
+            </div>
+            <div>
+                <button>Mobile Site</button>
+                <a href="">Best Buy Canada</a>
+            </div>
+        </div>
+        <hr>
+        <div id="legalnavlinks">
+            <a href="">Accessibility</a>
+            <a href="">Terms & Condition</a>
+            <a href="">Privacy</a>
+            <a href="">Interes-Based Ads</a>
+            <a href="">California Privacy Right</a>
+            <a href="">Do Not Sell My Personal Information</a>
+            <a href="">California Supply Chain Trasnparency Act</a>
+        </div>
+        <span>
+            In-store pricing may vary. Prices and offers are subject to change. © 2022 Best Buy. All rights
+            reserved. BEST BUY, the BEST BUY logo, the tag design, and MY BEST BUY are trademarks of Best Buy and
+            its affiliated companies.
+        </span>
+    </div>
+</footer>
+
+
+
+</body>
+<script src="./navbar.js"></script>
+</html>

@@ -1,0 +1,151 @@
+#container{
+        
+    justify-content: center;
+    /* margin: auto; */
+    
+    
+    
+}
+#mainBox{
+    /* border: 1px solid; */
+    display: flex;
+    gap: 30px;
+    width: auto;
+    justify-content: center;
+    margin-top: 1%;
+    height:auto;
+    
+    
+}
+
+
+#column2{
+    
+    width: 320px;
+    margin: 0px 50px;
+}
+
+#miniDiv1{
+    display: flex;
+    
+    gap: 1%;
+
+}
+#ratingStars{
+    height: 45px;
+    width: 90px;
+}
+#sku{
+    margin-bottom: 0%;
+}
+
+#miniDiv2{
+    display: flex;
+}
+#miniDiv3{
+    display: flex;
+    height: 35px;
+   
+    text-align: center;
+    align-content: center;
+}
+#subMiniDiv3{
+    
+    width: 80px;
+    color: white;
+    background: rgb(151, 52, 52);
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 4px 0px;
+    margin-right: 5px;
+    
+    
+}
+
+
+
+#price{
+    font-weight: bold;
+    margin-bottom: 0%;
+    font-size: 32px;
+}
+
+
+#addTocartButton{
+    
+    background-color: rgb(253, 219, 27);
+    text-align: center;
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 15%;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0px 1px 2px 1px grey;
+    
+
+}
+#addTocartButton:hover{
+    
+    box-shadow: inset 300px 0 0 0 yellow;
+    
+}
+
+#dollarSign{
+    font-size: 32px;
+    font-weight: bold;
+   
+}
+
+#image{
+    margin-top: 8%;
+    width: 200px;
+    /* height: 200px; */
+    /* height: 200px; */
+
+}
+#save{
+    margin: auto;
+    
+}
+#get{
+    color: green;
+    margin-top: 0%;
+}
+#name{
+    color: blue;
+    
+    
+}
+#name:hover{
+    
+    
+    /* font-weight: bold; */
+    color: rgb(10, 10, 92);
+    
+}
+#location{
+    color: blue;
+    font-size: 14px;
+    margin-top: 0%;
+}
+#location:hover{
+    
+    
+    /* font-weight: bold; */
+    color: rgb(10, 10, 92);
+    
+}
+#extimates{
+    color: blue;
+    font-size: 14px;
+    margin-top: 0%;
+}
+#extimates:hover{
+    
+    
+    /* font-weight: bold; */
+    color: rgb(10, 10, 92);
+    
+}
+
